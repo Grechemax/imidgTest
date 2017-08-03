@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 80px 15%;
+    background-color: white;
+}
+
+.articleBlock {
+    background-color: #f0f0f0;
+    display: block;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleBlock__item {
+    width: 48%;
+}
+
+.articleBlock__item img {
+    padding-right: 20px;
+    margin-right: 22px;
+}
+
+.articleBlock__item_header {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 21pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 28pt;
+}
+
+.article-content {
+    font-size: 14pt;
+    color: #8d8d8d;
+    line-height: 20pt;
+}
+
+.articleBlock button {
+    background: -moz-linear-gradient(#d94137, #b4362e);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d94137), to(#b4362e));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d94137', endColorstr='#b4362e');
+    padding: 8px 25px;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 2px;
+    border: none;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+.proposals-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 30px 10px 50px 10px;
+}
+
+.proposals-box .proposal p {
+    float: right;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.container__article {
+    margin-top: 28px;
+}
+
+.container__article h4 {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 18pt;
+     margin-bottom: 8px;
+}
+
+.container__article p {
+    font-size: 14pt;
+    line-height: 20pt;
+    color: #8d8d8d;
+}
+
+@media screen and (max-width: 980px) {
+    .articleBlock {
+        display: block;
+    }
+    .articleBlock__item {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .proposal {
+        display: flex;
+        margin: 33px;
+    }
+    .proposals-box {
+        margin: 0;
+    }
+    .proposals-box {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
